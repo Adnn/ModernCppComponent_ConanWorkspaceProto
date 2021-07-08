@@ -1,0 +1,7 @@
+#!sh
+
+
+conan install boost/1.75.0@ -g cmake_paths
+export BOOST_ROOT=$(cat conan_paths.cmake | sed -ne 's/set(CONAN_BOOST_ROOT "\(.*\)")/\1/p')
+rm conan_paths.cmake
+export RT=$(pwd)

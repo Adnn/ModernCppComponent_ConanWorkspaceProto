@@ -1,0 +1,8 @@
+editables:
+  myrepository/0.0.0:
+    path: ../up/conan
+  down/0.0.0:
+    path: ../down/conan
+layout: layout.ini
+workspace_generator: cmake
+root: down/0.0.0
